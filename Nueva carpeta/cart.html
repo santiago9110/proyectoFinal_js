@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/cart.css">
+  
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="./index.html"><img src="./img/logo.jpg" id="logo" alt="Logo"> </a>
+            <div>
+                <a href="#">MTB</a>
+                <a href="#">RUTA</a>
+                <a href="./cart.html" id="cart"><img src="./img/carrito-min.png" alt="Carrito de compras"> <span id="cuenta-carrito">0</span></a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <p id="carrito-vacio">ups! no hay nada  <a href="../index.html">agrega</a></p>
+        <section id="productos-container"></section>
+
+        <section id="totales">
+            <p>total unidades: <span id="unidades">0</span></p>
+            <p>total precio: $ <span id="precio">0</span></p>
+
+            <button disabled>comprar</button>
+            <button id="reiniciar"> Reinciar</button>
+        </section>
+    </main>
+    
+    <script src="./js/cart.js" defer></script>
+    <script src="./js/cartServer.js"></script>
+</body>
+
+</html>
