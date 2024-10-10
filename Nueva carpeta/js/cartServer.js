@@ -74,5 +74,6 @@ function actualizarNumeroCarrito() {
     }
 }
 
+
 // Llamar a actualizarNumeroCarrito() para reflejar la cantidad actual al cargar la página
 actualizarNumeroCarrito();

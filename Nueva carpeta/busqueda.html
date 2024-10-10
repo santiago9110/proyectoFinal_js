@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/index.js" defer></script><!--para que secargue antes que el arreglo -->
+    <script src="./db/db.json" ></script>
+    
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="./index.html"><img src="./img/logo.jpg" id="lupa" alt="Logo"> </a>
+            <a href="./busqueda.html"><img src="./img/lupa.jpg" alt="lupa"></a>
+            <div>
+                <a href="#">MTB</a>
+                <a href="#">RUTA</a>
+                <a href="./cart.html" id="cart"><img src="./img/carrito-min.png" alt="Carrito de compras"> <span id="cuenta-carrito">0</span></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <input type="text" id="buscador" placeholder="ingrese el producto">
+        <button id="buscar-btn">buscar</button>
+        <div id="productos-container"></div>
+    </main>
+      
+<script src="./js/cartServer.js"></script>
+</body>
+</html>

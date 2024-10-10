@@ -1,63 +1,150 @@
-
-body{
-font-family:  sans-serif;
-margin: 0;
-}
-a{
+:root {
+    --bg-color: black; /* Color de fondo para el modo oscuro */
+    --text-color: white; /* Color de texto para el modo oscuro */
+    --link-color: white;
+    --link-hover-color: red;
+    --button-bg-color: #333; /* Color del fondo del botón */
+    --button-text-color: white; /* Color del texto en el botón */
+  }
+  
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: sans-serif;
+    margin: 0;
+  }
+  
+  a {
     text-decoration: none;
-    color: black;
-}
-a:hover:not(#cart)/*para que cuando pases el cursor haga un efecto*/
-{
-    color: red;
-}
-h3,p{
+    color: var(--link-color);
+  }
+  
+  a:hover:not(#cart) {
+    color: var(--link-hover-color);
+  }
+  
+  h3, p {
     margin: 6px 0px;
-}
-
-header{
+    color: var(--text-color);
+  }
+  
+  header {
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.114);
     padding: 10px 0;
     margin-bottom: 10px;
-}
-
-header nav{
-    display:  flex; /*una cosa al lado de la otra*/
+  }
+  
+  header nav {
+    display: flex; 
     justify-content: space-between;
-    margin: 0 60px;/*x e y*/
-}
-header nav div{
-    display:  flex; /*una cosa al lado de la otra*/
+    margin: 0 60px;
+  }
+  
+  header nav div {
+    display: flex; 
     align-items: center;
-   gap: 30px;/*separar  los links*/
-   position: relative;
-}
-
-#cuenta-carrito
-{
-    background-color:red ;
-    border-radius: 100%;/*borde redondo*/
+    gap: 30px;
+    position: relative;
+  }
+  
+  #cuenta-carrito {
+    background-color: red;
+    border-radius: 100%;
     display: inline-block;
     width: 20px;
     line-height: 20px;
     aspect-ratio: 1;
     text-align: center;
     position: absolute;
-
-}
-#logo{
+  }
+  
+  #lupa{
     height: 40px;
-}
-
-header nav img{
+    flex: auto;
+    border: #bbb;
+    text-align: center;
+  }
+  #logo {
+    height: 40px;
+  }
+  
+  header nav img {
     height: 25px;
-}
-
-button{
-    background-color: var(--color-fondo-tarjeta);
-    color: white;
+  }
+  
+  button {
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
     padding: 5px 10px;
     border: unset;
     border-radius: 5px;
     cursor: pointer;
-}
+  }
+  
+
+  
+  #footer {
+    background-color: #111;
+    color: white;
+    padding: 20px 0;
+    font-family: sans-serif;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .footer-section {
+    flex: 1;
+    padding: 0 20px;
+  }
+
+  h5 {
+    margin-bottom: 10px;
+    color: white;
+    font-size: 18px;
+  }
+
+  p {
+    margin: 0;
+    color: #bbb;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  ul li {
+    margin-bottom: 8px;
+  }
+
+  a {
+    color: #bbb;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: red;
+  }
+
+  .social-icon {
+    display: inline-block;
+    margin-right: 15px;
+    color: #bbb;
+  }
+
+  .social-icon:hover {
+    color: red;
+  }
+
+  .footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    margin-top: 20px;
+    color: #bbb;
+  }
