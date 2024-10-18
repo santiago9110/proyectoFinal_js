@@ -35,15 +35,18 @@ function buscarProducto(nombreProducto, productos) {
     }
 }
 
+
 // Función para manejar los productos después de obtenerlos
 function manejarProductos(data) {
     // Mostrar todos los productos al inicio
     crearTarjetasProductosInicio(data.productos); // Acceder a los productos si están dentro de un objeto "productos"
 
     // Agregar evento de búsqueda
-    botonBuscar.addEventListener("click", () => {
-        const nombreBuscado = buscador.value;
-        buscarProducto(nombreBuscado, data.productos); // Acceder correctamente a "productos"
+    buscador.addEventListener("keypress", (event) => {
+        if (event.key === "Enter") {
+            const nombreBuscado = buscador.value;
+            buscarProducto(nombreBuscado, data.productos);
+        }
     });
 }
 
